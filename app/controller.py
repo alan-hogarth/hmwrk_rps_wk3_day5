@@ -9,3 +9,4 @@ def play_game(hand1, hand2):
     player_2 = Player("Player 2", hand2)
     current_game = Game(player_1, player_2)
     winner = current_game.get_winner()
+    return winner
