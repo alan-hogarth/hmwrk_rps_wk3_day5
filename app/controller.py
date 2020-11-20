@@ -9,4 +9,10 @@ def play_game(hand1, hand2):
     player_2 = Player("Player 2", hand2)
     current_game = Game(player_1, player_2)
     winner = current_game.get_winner()
-    return winner
+    return render_template("results.html", winner=winner)
+
+    # get winner variable into a form somehow?
+    #  winner = winner in route?
+
+
+#    
