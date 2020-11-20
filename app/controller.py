@@ -12,7 +12,7 @@ def play_game(hand1, hand2):
     return render_template("results.html", winner=winner)
 
     # get winner variable into a form somehow?
-    #  winner = winner in route?
+    #  winner = winner as render_template parameter
 
 
 #    

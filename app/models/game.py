@@ -7,23 +7,23 @@ class Game:
 
     def get_winner(self):
         if self.player_1.hand == "rock" and self.player_2.hand == "scissors":
-           return "player 1 wins"
+           return "Rock beats Scissors: player 1 wins"
         elif self.player_1.hand == "scissors" and self.player_2.hand == "rock":
-            return "player 2 wins!"
+            return "Rock beats Scissors: player 2 wins!"
         elif self.player_1.hand == "rock" and self.player_2.hand == "rock":
-            return "draw"
+            return "Rock/Rock: It's a draw"
         elif self.player_1.hand == "scissors" and self.player_2.hand == "scissors":
-            return "draw"
+            return "Scissors/Scissors: it's a draw"
         elif self.player_1.hand == "rock" and self.player_2.hand == "paper":
-            return "player 2 wins!"
+            return "Paper beats Rock: player 2 wins!"
         elif self.player_1.hand == "paper" and self.player_2.hand == "rock":
-            return "player 1 wins!"
+            return "Paper beats Rock: player 1 wins!"
         elif self.player_1.hand == "paper" and self.player_2.hand == "paper":
-            return "draw"
+            return "Paper/Paper: it's a draw"
         elif self.player_1.hand == "scissors" and self.player_2.hand == "paper":
-            return "player 1 wins!"
+            return "Scissors beats Paper: player 1 wins!"
         elif self.player_1.hand == "paper" and self.player_2.hand == "scissors":
-            return "player 2 wins!"
+            return "Scissors beats Paper: player 2 wins!"
         
         
   

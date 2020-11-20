@@ -1,0 +1,7 @@
+body {
+    background-color: rgb(49, 168, 129);
+}
+
+div > p {
+    font-family: monospace;
+}
