@@ -15,4 +15,6 @@ def play_game(hand1, hand2):
     #  winner = winner as render_template parameter
 
 
-#    
+@app.route('/welcome')
+def rules():
+    return render_template("welcome.html")
