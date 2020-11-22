@@ -11,10 +11,26 @@ def play_game(hand1, hand2):
     winner = current_game.get_winner()
     return render_template("results.html", winner=winner)
 
-    # get winner variable into a form somehow?
+    # get winner variable into a form
     #  winner = winner as render_template parameter
 
 
 @app.route('/welcome')
 def rules():
     return render_template("welcome.html")
+
+# @app.route('/play', methods=['GET', 'POST'])
+# def play():
+#     return render_template("play.html")
+
+@app.route('/play', methods=['GET', 'POST'])
+def game_play():
+    return render_template("play.html")
+    print(request.form)
+    player_name = request.form["name"]
+    player_move = request.form["hand"]
+
+    player_submit = Game(player_name, player_move)
+    player_result = player_submit.get_winner()
+    return redirect("/results.html")
+    
