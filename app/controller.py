@@ -39,10 +39,7 @@ def game_play():
 #     moves = ["rock", "paper", "scissors"]
 #     random_move = choice(moves)
     
-#     player_1 = Player("Player 1", "rock")
-#     player_2 = Player("Computer", random_move)
-#     current_game = Game(player_1, player_2)
-#     winner = current_game.get_winner()
+
     
     
     
