@@ -3,12 +3,16 @@
 
 {% block content %}
 
-<form action="/play" method="post">
-    <label for="name">Name</label>
+<form action="/add_move" method="post">
+    <label for="name">name</label>
     <input type="text" name="name" id="name">
 
-    <label for="name">Hand</label>    
-    <textarea name="hand" id="hand"></textarea>
+    <label for="hand">hand</label>    
+    <select name="hand" id="hand">
+        <option value="rock">rock</option>
+        <option value="paper">paper</option>
+        <option value="scissors">scissors</option>
+    </select>
 
     <input type="submit" value="play">
 </form>

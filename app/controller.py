@@ -19,18 +19,17 @@ def play_game(hand1, hand2):
 def rules():
     return render_template("welcome.html")
 
-# @app.route('/play', methods=['GET', 'POST'])
-# def play():
-#     return render_template("play.html")
-
-@app.route('/play', methods=['GET', 'POST'])
-def game_play():
+@app.route('/play')
+def play():
     return render_template("play.html")
-    print(request.form)
-    player_name = request.form["name"]
-    player_move = request.form["hand"]
 
-    player_submit = Game(player_name, player_move)
-    player_result = player_submit.get_winner()
-    return redirect("/results.html")
+@app.route('/add_move', methods=['GET', 'POST'])
+def game_play():
+    print(request.form)
+    add_name = request.form["name"]
+    add_move = request.form["hand"]
+    return "logged"
+   
+    
+    
     
