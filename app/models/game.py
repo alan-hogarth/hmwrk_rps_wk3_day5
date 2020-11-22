@@ -1,8 +1,9 @@
 class Game:
 
-    def __init__(self, player_1, player_2):
+    def __init__(self, player_1, player_2, computer):
         self.player_1 = player_1
         self.player_2 = player_2
+        self.computer = computer
 
 
     def get_winner(self):
@@ -25,6 +26,12 @@ class Game:
         elif self.player_1.hand == "paper" and self.player_2.hand == "scissors":
             return "Scissors beats Paper: player 2 wins!"
         
+    import random
+
+    moves = ["rock", "paper", "scissors"]
+
+    def computer(self):
+        return random.choice(moves)
         
   
 
